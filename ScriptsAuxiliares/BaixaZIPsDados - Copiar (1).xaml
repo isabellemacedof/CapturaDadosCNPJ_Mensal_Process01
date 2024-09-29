@@ -1,0 +1,323 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="BaixaDictDadosCadastroNacionalPJ" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1138,4263" sap2010:WorkflowViewState.IdRef="BaixaDictDadosCadastroNacionalPJ_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="BaixaDictDadosCadastroNacionalPJ" sap:VirtualizedContainerService.HintSize="512,4198" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Entrada: -&#xD;&#xA;&#xD;&#xA;Processamento: Baixa arquivos zip e pdf&#xA;&#xA;Saída: -" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Portal de Dados Abertos" sap:VirtualizedContainerService.HintSize="450,4110" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,3743" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="si:FileInfo" Name="file" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'Acessar o recurso'" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Timeout="1" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Trace" Message="[&quot;Select expandido&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Abrindo recursos&quot;]" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Recursos'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj" CvTextArea="697, 265, 113, 18" CvTextArgument="Recursos" CvType="Text" DesignTimeRectangle="678, 239, 1204, 71" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FriendlyName="'Recursos5'" FullSelectorArgument="&lt;webctrl aaname='Recursos5' id='btnCollapse' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Recursos5' id='btnCollapse' tag='BUTTON' type='button' class='btn btn-light btn-block m-1 dataset-btn botao-collapse-Recursos not-collapsed' check:innerText='Recursos' /&gt;" Guid="544d4285-f846-460a-9df4-b83dbb3a8f74" InformativeScreenshot="eb896640feafa5a967b75fed23262112.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal de Dados Abertos' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj" CvElementArea="877, 440, 178, 37" CvTextArea="914, 451, 103, 12" CvTextArgument="Acessar O recurso" CvType="Button" DesignTimeRectangle="879, 442, 175, 34" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FriendlyName="'Acessar o recurso'" FullSelectorArgument="&lt;webctrl id='btnDownloadUrl' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnDownloadUrl' tag='BUTTON' type='button' class='btn btn btn-secondary btn-secondary' aaname=' Acessar o recurso ' check:innerText='Acessar o recurso' /&gt;" Guid="704f79a7-01cd-4e6c-8eed-0c12dcfdf629" InformativeScreenshot="d4c3a08fa4d6ada309c5806e5f7b38f6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal de Dados Abertos' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Salvando&quot;]" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Acessar o recurso'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj" CvElementArea="878, 792, 177, 37" CvTextArea="914, 803, 103, 12" CvTextArgument="Acessar O recurso" CvType="Button" DesignTimeRectangle="879, 794, 175, 34" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FriendlyName="'Acessar o recurso'" FullSelectorArgument="&lt;webctrl id='btnDownloadUrl' idx='4' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnDownloadUrl' type='button' tag='BUTTON' class='btn btn btn-secondary btn-secondary' aaname=' Acessar o recurso ' check:innerText='Acessar o recurso' /&gt;" Guid="bf6b5bf6-0201-4b94-ba3d-ad73f035db61" InformativeScreenshot="57853d176fac19928e1984b55de7b342.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal de Dados Abertos' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '2024-09/'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/?C=N;O=D" CvTextArea="39, 329, 64, 15" CvTextArgument="2024-09/" CvType="Text" DesignTimeRectangle="38, 327, 65, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'2024-09/'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='2024-09/' check:innerText='2024-09/' /&gt;" Guid="457457a5-5980-410f-a9c7-dc9872a7f416" InformativeScreenshot="f3cbc9ee339e26bea36e4f93bdf85ea6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cnaes.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="39, 329, 64, 15" CvTextArgument="2024-09/" CvType="Text" DesignTimeRectangle="38, 327, 70, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Cnaes.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Cnaes.zip' check:innerText='Cnaes.zip' /&gt;" Guid="73544da2-03a9-40a1-89c5-598a1a30735d" InformativeScreenshot="350fb23fb4fbfbd8d960768cf40a52ad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cnaes.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="39, 329, 64, 15" CvTextArgument="2024-09/" CvType="Text" DesignTimeRectangle="38, 327, 70, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Cnaes.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Cnaes.zip' check:innerText='Cnaes.zip' /&gt;" Guid="5b95c958-92e6-4d4c-9e32-bae48e9900f4" InformativeScreenshot="92b91c44f559b9bc2d701b57b494adf1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Empresas0.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="36, 352, 66, 15" CvTextArgument="2024-08/" CvType="Text" DesignTimeRectangle="38, 350, 105, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Empresas0.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Empresas0.zip' check:innerText='Empresas0.zip' /&gt;" Guid="0edc24e1-2e7e-4f05-b07c-1b9b72866a8a" InformativeScreenshot="76c4fa01f3b4e31f3f1048a951e5384d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Empresas1.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="39, 376, 64, 15" CvTextArgument="2024-07/" CvType="Text" DesignTimeRectangle="38, 374, 105, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Empresas1.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Empresas1.zip' check:innerText='Empresas1.zip' /&gt;" Guid="cb48ee57-8d8c-4c47-af53-fbdb397bde31" InformativeScreenshot="abd93a794a3396fa2ae6c8c353897003.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Empresas2.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="39, 400, 64, 15" CvTextArgument="2024-06/" CvType="Text" DesignTimeRectangle="38, 398, 105, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Empresas2.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Empresas2.zip' check:innerText='Empresas2.zip' /&gt;" Guid="7e288e57-12ce-4d45-94b4-301acc9c4533" InformativeScreenshot="c6310a113ea5599e202c3a1c99ce232d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Empresas3.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="39, 424, 64, 15" CvTextArgument="2024-05/" CvType="Text" DesignTimeRectangle="38, 422, 105, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Empresas3.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='8' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Empresas3.zip' check:innerText='Empresas3.zip' /&gt;" Guid="d3938fa9-0824-4c65-90b8-9607be920510" InformativeScreenshot="a62b47635a09c2df842f7880f5e54dcb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Empresas4.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" DesignTimeRectangle="38, 445, 105, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Empresas4.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='9' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Empresas4.zip' check:innerText='Empresas4.zip' /&gt;" Guid="c6568e82-0feb-4dac-8943-3adfe01c2fc0" InformativeScreenshot="2b773f707053e1a3c5ea34af46524c07.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Empresas5.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" DesignTimeRectangle="38, 469, 105, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Empresas5.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='10' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Empresas5.zip' check:innerText='Empresas5.zip' /&gt;" Guid="3ff06c5e-17b1-4974-92d0-7b11d1329400" InformativeScreenshot="0419c7121b5c01c5edd73073e531343a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Empresas6.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" DesignTimeRectangle="38, 493, 105, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Empresas6.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='11' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Empresas6.zip' check:innerText='Empresas6.zip' /&gt;" Guid="a9289221-1a9c-4ee4-aa77-232b978d45dc" InformativeScreenshot="e8af64b8c18654eb92e4c11e587d2050.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Empresas7.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" DesignTimeRectangle="38, 517, 105, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Empresas7.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='12' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Empresas7.zip' check:innerText='Empresas7.zip' /&gt;" Guid="a47b4be6-e06c-49ec-8c16-35b3bc259bb2" InformativeScreenshot="a243e0b5b60dd2209ccfae9c923edb69.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Empresas8.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" DesignTimeRectangle="38, 541, 105, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Empresas8.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='13' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Empresas8.zip' check:innerText='Empresas8.zip' /&gt;" Guid="0630e156-944b-4a25-8686-7ed851d1ab75" InformativeScreenshot="3f4a3daa8e0dc34c86ceaa079f15b7b8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Empresas9.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" DesignTimeRectangle="38, 564, 105, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Empresas9.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='14' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Empresas9.zip' check:innerText='Empresas9.zip' /&gt;" Guid="79179438-0d72-409a-880e-c7d4efbfd9c7" InformativeScreenshot="f05c060db8c26237ccb6b043d42bf13f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Socios0.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" DesignTimeRectangle="38, 969, 83, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Socios0.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='31' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Socios0.zip' check:innerText='Socios0.zip' /&gt;" Guid="1d08706f-45e4-479d-8991-c6f9ae992aaf" InformativeScreenshot="e011def3d54623e06a39f841a8631cbb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Socios1.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="36, 798, 86, 19" CvTextArgument="Socios1.zip" CvType="Text" DesignTimeRectangle="38, 796, 83, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Socios1.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='32' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Socios1.zip' check:innerText='Socios1.zip' /&gt;" Guid="bf02bc97-ff34-455b-b0b7-07d9d2b1392c" InformativeScreenshot="2fd321e830487e536417284b5384614d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Socios2.zip'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="36, 822, 86, 20" CvTextArgument="Socios2.zip" CvType="Text" DesignTimeRectangle="38, 820, 83, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Socios2.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='33' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Socios2.zip' check:innerText='Socios2.zip' /&gt;" Guid="2b2bc352-efdc-47c9-835d-2955f5967427" InformativeScreenshot="02c869af6e925a6a979fe61d7e7ad5e2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Socios3.zip'" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="36, 846, 86, 20" CvTextArgument="Socios3.zip" CvType="Text" DesignTimeRectangle="38, 844, 83, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Socios3.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='34' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Socios3.zip' check:innerText='Socios3.zip' /&gt;" Guid="414aa5f9-858e-4705-9acc-ba4e2a9218e3" InformativeScreenshot="391a2be2e21b13176dd1ddb5fc89cad0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Socios4.zip'" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="36, 870, 86, 20" CvTextArgument="Socios4.zip" CvType="Text" DesignTimeRectangle="38, 868, 83, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Socios4.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='35' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Socios4.zip' check:innerText='Socios4.zip' /&gt;" Guid="46672d01-f7ae-40b5-8920-751cc59519ab" InformativeScreenshot="58b3ae49a15ec30c3fcbe02145b3bdcf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Socios5.zip'" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="36, 894, 86, 19" CvTextArgument="Socios5.zip" CvType="Text" DesignTimeRectangle="38, 892, 83, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Socios5.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='36' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Socios5.zip' check:innerText='Socios5.zip' /&gt;" Guid="f12f9165-07a7-4135-8840-80fd585c833d" InformativeScreenshot="aa7906e2792af5556cb5e40c8b7c5cb8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Socios6.zip'" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="36, 917, 86, 19" CvTextArgument="Socios6.zip" CvType="Text" DesignTimeRectangle="38, 915, 83, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Socios6.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='37' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Socios6.zip' check:innerText='Socios6.zip' /&gt;" Guid="a2247059-2927-446b-abd9-19c846045363" InformativeScreenshot="601885bbc46dc912e43f1318471eb9a2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Socios7.zip'" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="36, 941, 87, 19" CvTextArgument="Socios7.zip" CvType="Text" DesignTimeRectangle="38, 939, 83, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Socios7.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='38' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Socios7.zip' check:innerText='Socios7.zip' /&gt;" Guid="112098cd-71aa-4768-b3f4-abb0782ff362" InformativeScreenshot="3500755080706b0572af405c96a83512.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Socios8.zip'" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="36, 965, 86, 20" CvTextArgument="Socios8.zip" CvType="Text" DesignTimeRectangle="38, 963, 83, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Socios8.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='39' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Socios8.zip' check:innerText='Socios8.zip' /&gt;" Guid="76531f46-7e43-48e1-998c-08d0a5d90e50" InformativeScreenshot="621c3636557ac053eb355186691504b6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Socios9.zip'" sap2010:WorkflowViewState.IdRef="NClick_31" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://dadosabertos.rfb.gov.br/CNPJ/dados_abertos_cnpj/2024-09/" CvTextArea="36, 989, 86, 19" CvTextArgument="Socios9.zip" CvType="Text" DesignTimeRectangle="38, 987, 83, 20" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'Socios9.zip'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='40' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Socios9.zip' check:innerText='Socios9.zip' /&gt;" Guid="307a1115-b188-41d3-898a-9738153a79e8" InformativeScreenshot="8ddf586c24b68afea08d1ade74731c78.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index of /CNPJ/dados_abertos_cnpj/2024-09' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Shortcuts="[d(hk)][k(right)][u(hk)]" Version="V3" />
+            <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download - Dicionario PJ" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[file]" sap:VirtualizedContainerService.HintSize="354,50" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" IgnoreFiles=".tmp">
+              <ui:GetLastDownloadedFile.Body>
+                <ActivityAction>
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,268" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'salvar'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="1570, 985, 90, 27" CvTextArea="1598, 992, 33, 12" CvTextArgument="Salvar" CvType="Button" DesignTimeRectangle="1571, 986, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='Sa&amp;amp;lvar' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='Sa&amp;amp;lvar' check:text='unchecked' /&gt;" Guid="459a3c30-cb95-4e17-81bb-8dd4b06d3757" InformativeScreenshot="11edbe23c2b5521e346eb48f5fdc9cf0.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Salvar como' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:GetLastDownloadedFile.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:GetLastDownloadedFile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="3bd628e7f71d24e61a569554610a51a3.jpg" Selector="&lt;html app='chrome.exe' title='Portal de Dados Abertos' /&gt;" Title="Home interna Bridge" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

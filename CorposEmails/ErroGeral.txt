@@ -1,0 +1,5 @@
+﻿Olá!
+Ocorreu uma exceção durante execução do processo de captura de dados de CNPJ, por este motivo não será possível prosseguir com o download dos documentos. Por favor, contate a equipe responsável para maiores detalhes. A equipe também pode avaliar a possibilidade de reprocessamento ou necessidade de tratativa manual. 
+
+Atenciosamente,
+RPA - Captura de Dados de CNPJ

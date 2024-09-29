@@ -1,0 +1,5 @@
+﻿Olá!
+O processo de Captura de Dados de CNPJ encerrou o processamento. A data da última atualização era anterior a data do último download informada. Nenhum arquivo foi baixado durante esta execução. 
+
+Atenciosamente,
+RPA - Captura de Dados de CNPJ

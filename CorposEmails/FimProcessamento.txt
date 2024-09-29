@@ -1,0 +1,5 @@
+﻿Olá!
+O processo de Captura de Dados de CNPJ encerrou o processamento. Os arquivos podem ser encontrados na pasta de downloads.
+
+Atenciosamente,
+RPA - Captura de Dados de CNPJ

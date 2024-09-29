@@ -1,0 +1,200 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="AcessoConjuntoDados" this:AcessoConjuntoDados.in_strURL="https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_strURL" Type="InArgument(x:String)" />
+    <x:Property Name="out_strDataUltimaAtualizacao" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1148,1685</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>AcessoConjuntoDados_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="AcessoConjuntoDados" sap:VirtualizedContainerService.HintSize="1158,1620" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Entrada: URL de acesso a aba de dados&#xD;&#xA;&#xD;&#xA;Processamento: Acessa a URL e aguarda o carregamento do campo &quot;Última Alteração&quot;&#xD;&#xA;&#xD;&#xA;Saída: -" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Home" sap:VirtualizedContainerService.HintSize="1096,1532" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="be590fd6-d779-43e7-9ad5-197a7494a21c" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1062,1205" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'Última alteração:'" sap:VirtualizedContainerService.HintSize="1000,1115" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" Timeout="15" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="496,833" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message - Acesso realizado" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Acesso a página de dados realizado com sucesso&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <uix:NGetText DisplayName="Get Text 'Última alteração:'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="be590fd6-d779-43e7-9ad5-197a7494a21c" TextString="[out_strDataUltimaAtualizacao]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj" CvTextArea="76, 360, 274, 16" CvType="AnyWordGroup" DesignTimeRectangle="33, 519, 584, 22" DesignTimeScaleFactor="0.8999999761581421" FriendlyName="'Última alteração:'" FullSelectorArgument="&lt;webctrl class='col-12' parentid='collapseSidebar' tag='DIV' aaname='*Última alteração:*' /&gt;" FuzzySelectorArgument="&lt;webctrl class='col-12' parentid='collapseSidebar' tag='DIV' type='' /&gt;" Guid="8352b708-2008-4c6b-bd3a-c81cfe58b23d" ImageBase64="" InformativeScreenshot="be6adb90ee435a244ba59ec8bed068dd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal de Dados Abertos' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <ui:LogMessage DisplayName="Log Message - texto capturado" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Texto capturado: &quot;+out_strDataUltimaAtualizacao]" />
+                  <Assign sap2010:Annotation.AnnotationText="Realiza a limpeza da string utilizando Regex. A automação está buscando o padrão &quot;dd/MM/AAAA&quot; no texto capturado." DisplayName="Assign - Limpeza da string" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[out_strDataUltimaAtualizacao]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(out_strDataUltimaAtualizacao, "\d{2}/\d{2}/\d{4}").Value]</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <ui:LogMessage DisplayName="Log Message - Apos Tratamento" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Texto apos captura da data: &quot;+ out_strDataUltimaAtualizacao]" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw - Falha acesso" Exception="[new SystemException(&quot;Falha no acesso a página de dados de CNPJ&quot;)]" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj" CvTextArea="76, 806, 274, 17" CvTextArgument="Última alteração:*" CvType="Text" DesignTimeRectangle="33, 1259, 584, 22" DesignTimeScaleFactor="0.8999999761581421" FriendlyName="'Última alteração:'" FullSelectorArgument="&lt;webctrl class='col-12' parentid='collapseSidebar' tag='DIV' aaname=' Última alteração:*' /&gt;" FuzzySelectorArgument="&lt;webctrl class='col-12' parentid='collapseSidebar' tag='DIV' aaname=' Última alteração:*' type='' check:text='Última alteração:*' /&gt;" Guid="bd54169b-9952-4afa-ae11-39cee007d507" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal de Dados Abertos' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" Selector="&lt;html app='chrome.exe' title='*' /&gt;" Title="Home interna Bridge" Url="[in_strURL]" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

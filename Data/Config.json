@@ -1,0 +1,107 @@
+﻿{
+    "Settings": [{
+            "Name": "OrchestratorQueueName",
+            "Value": "er001_uidemo_queue",
+            "Description": "Orchestrator queue Name. The value must match with the queue name defined on Orchestrator."
+        }, {
+            "Name": "OrchestratorQueueFolder",
+            "Value": "Lab1",
+            "Description": "Folder name. The value must match a folder defined in Orchestrator and queue specified as OrchestratorQueueName should be created in this folder. For classic folders leave the value field empty."
+        }, {
+            "Name": "OrchestratorSharedFolder",
+            "Value": "Shared",
+            "Description": "Folder name para acesso a assets globais"
+        }, {
+            "Name": "logF_BusinessProcessName",
+            "Value": "ER001_CapturaDadosCNPJ_Mensal_Process01",
+            "Description": "Logging field which allows grouping of log data of two or more subprocesses under the same business process name"
+        }, {
+            "Name": "log_robot",
+            "Value": "ROBOT01_D01P01",
+            "Description": "Nome do robô"
+        }, {
+            "Name": "sessao",
+            "Value": "sessao",
+            "Description": "Calculado automaticamente no inicio da execução do robô"
+        }, {
+            "Name": "registroExternalBD",
+            "Value": "Não",
+            "Description": "Permissão para registrar log externamente no Elastic Search"
+        }, {
+            "Name": "Port_SMTP",
+            "Value": "465",
+            "Description": "Porta para servidor SMTP"
+        }, {
+            "Name": "Server_SMTP",
+            "Value": "smtp.outlook.com",
+            "Description": "Servidor SMTP"
+        }, {
+            "Name": "GLOBAL_Email_Credential",
+            "Value": "GLOBAL_Email_Credential",
+            "Description": "Credenciais de acesso a conta de e-mail para uso do rpa"
+        }
+    ],
+    "Constants": [{
+            "Name": "MaxRetryNumber",
+            "Value": "0",
+            "Description": "Must be 0 if working with Orchestrator queues. If > 0, the robot will retry the same transaction which failed with a system exception. Must be an integer value."
+        }, {
+            "Name": "MaxConsecutiveSystemExceptions",
+            "Value": "0",
+            "Description": "The number of consecutive system exceptions allowed. If MaxConsecutiveSystemExceptions is reached, the job is stopped. To disable this feature, set the value to 0. "
+        }, {
+            "Name": "ExScreenshotsFolderPath",
+            "Value": "Exceptions_Screenshots",
+            "Description": "Where to save exceptions screenshots - can be a full or a relative path."
+        }, {
+            "Name": "LogMessage_GetTransactionData",
+            "Value": "Processing Transaction Number: ",
+            "Description": "Static part of logging message. Calling Get Transaction Data."
+        }, {
+            "Name": "LogMessage_GetTransactionDataError",
+            "Value": "Error getting transaction data for Transaction Number: ",
+            "Description": "Static part of logging message. Error retrieving Transaction Data."
+        }, {
+            "Name": "LogMessage_Success",
+            "Value": "Transaction Successful.",
+            "Description": "Static part of logging message. Processed Transaction succesful."
+        }, {
+            "Name": "LogMessage_BusinessRuleException",
+            "Value": "Business rule exception.",
+            "Description": "Static part of logging message. Processed Transaction failed with business exception."
+        }, {
+            "Name": "LogMessage_ApplicationException",
+            "Value": "System exception.",
+            "Description": "Static part of logging message. Processed Transaction failed with application exception."
+        }, {
+            "Name": "ExceptionMessage_ConsecutiveErrors",
+            "Value": "The maximum number of consecutive system exceptions was reached. ",
+            "Description": "Error message in case MaxConsecutiveSystemExceptions number is reached."
+        }, {
+            "Name": "RetryNumberGetTransactionItem",
+            "Value": "2",
+            "Description": "The number of times Get Transaction Item activity is retried in case of an exception. Must be an integer >= 1."
+        }, {
+            "Name": "RetryNumberSetTransactionStatus",
+            "Value": "2",
+            "Description": "The number of times Set transaction status activity is retried in case of an exception. Must be an integer >= 1. "
+        }, {
+            "Name": "ShouldMarkJobAsFaulted",
+            "Value": "TRUE",
+            "Description": "Must be TRUE or FALSE. If the value is TRUE and an error occurs in Initialization state or the MaxConsecutiveSystemExceptions is reached, the job is marked as Faulted."
+        }
+    ],
+    "Assets": [{
+            "Name": "GLOBAL_URL_GovFederal_ConjuntoDados",
+            "Asset": "GLOBAL_URL_GovFederal_ConjuntoDados",
+            "OrchestratorAssetFolder": "Shared",
+            "Description": "URL de acesso a aba 'conjunto de dados' no site de dados do governo federal."
+        },
+	{
+            "Name": "CapturaDados_EmailsArea",
+            "Asset": "CapturaDados_EmailsArea",
+            "OrchestratorAssetFolder": "Shared",
+            "Description": "E-mails da área de negócio separados por ponto e vírgula."
+        }
+    ]
+}
